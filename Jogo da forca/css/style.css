@@ -1,0 +1,178 @@
+
+
+body{
+    background: #080816;
+    height: 80vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*********
+area do jogo*/
+.area-jogo{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/******
+forca*/
+
+.area-img{
+    background-image: url(../imagens/forca1.png);
+    width: 234px;
+    height: 272px;
+    background-repeat: no-repeat;
+}
+
+/****************
+palavra secreta*/
+
+.segredo{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.letras{
+    text-transform: uppercase;
+    color: white;
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid #8b008b;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+
+
+/*******
+botoes*/
+
+.btn{
+    border: none;
+    width: 140%;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.5s;
+    color: black;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+}
+
+.btn-reload{
+    border: none;
+    width: 140%;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.5s;
+    color: purple;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.btn:hover{
+    background: skyblue;
+    color: #000;
+    transform: scale(1.2);
+    box-shadow: 0px 5px 50px #fff;
+}
+
+.btn-reload:hover{
+    background: purple;
+    color: #000;
+    transform: scale(1.2);
+    box-shadow: 0px 5px 50px #fff;
+}
+
+@media(max-width: 550px){
+    .btn{
+        border: none;
+        width: 85%;
+        height: 4vh;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 10px;
+        transition: 0.5s;
+        color: black;
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .btn-reload{
+        border: none;
+        width: 85%;
+        height: 4vh;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 19px;
+        transition: 0.5s;
+        color: purple;
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .btn:hover{
+        background: skyblue;
+        color: #000;
+        transform: scale(1.2);
+        box-shadow: 0px 5px 50px #fff;
+    }
+    
+    .btn-reload:hover{
+        background: purple;
+        color: #000;
+        transform: scale(1.2);
+        box-shadow: 0px 5px 50px #fff;
+    }
+}
+/**********
+categoria*/
+
+.categoria{
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.dica, #dica{
+    text-transform: uppercase;
+    color: #8b008b;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+@media(max-width: 550px){
+    .categoria{
+        color: white;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    .dica{
+        text-transform: uppercase;
+        color: #8b008b;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}

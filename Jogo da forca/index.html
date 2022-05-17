@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da forca</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="imagens/forca.png" type="image/x-icon">
+
+    
+    </head>
+    <body>
+
+        <div class="area-jogo">
+            <div class="area-img" id="imagem"><!--Area da imagem forca-->
+                <!--imagem usada como background definida no css-->
+            </div><!--Area da imagem forca-->
+
+            <div class="segredo" id="palavra_secreta"><!--area palavra que deve ser descoberta-->
+                <!--<div class="letras">A<div></div>-->
+            </div><!--area palavra que deve ser descoberta-->
+
+            <div><!--area teclado-->
+                <table class="area_botoes" id="teclado">
+                    <tr>
+                        <td>
+                            <button class="btn" id="tecla_A" onclick="verificaLetraEscolhida('A')">A</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_B" onclick="verificaLetraEscolhida('B')">B</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_C" onclick="verificaLetraEscolhida('C')">C</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_D" onclick="verificaLetraEscolhida('D')">D</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_E" onclick="verificaLetraEscolhida('E')">E</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_F" onclick="verificaLetraEscolhida('F')">F</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_G" onclick="verificaLetraEscolhida('G')">G</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_H" onclick="verificaLetraEscolhida('H')">H</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_I" onclick="verificaLetraEscolhida('I')">I</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="btn" id="tecla_J" onclick="verificaLetraEscolhida('J')">J</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_K" onclick="verificaLetraEscolhida('K')">K</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_L" onclick="verificaLetraEscolhida('L')">L</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_M" onclick="verificaLetraEscolhida('M')">M</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_N" onclick="verificaLetraEscolhida('N')">N</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_O" onclick="verificaLetraEscolhida('O')">O</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_P" onclick="verificaLetraEscolhida('P')">P</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_Q" onclick="verificaLetraEscolhida('Q')">Q</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_R" onclick="verificaLetraEscolhida('R')">R</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="btn" id="tecla_S" onclick="verificaLetraEscolhida('S')">S</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_T" onclick="verificaLetraEscolhida('T')">T</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_U" onclick="verificaLetraEscolhida('U')">U</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_V" onclick="verificaLetraEscolhida('V')">V</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_W" onclick="verificaLetraEscolhida('W')">W</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_X" onclick="verificaLetraEscolhida('X')">X</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_Y" onclick="verificaLetraEscolhida('Y')">Y</button>
+                        </td>
+                        <td>
+                            <button class="btn" id="tecla_Z" onclick="verificaLetraEscolhida('Z')">Z</button>
+                        </td>
+                        <td>
+                            <button class="btn-reload" id="tecla_reload">
+                                🔁
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div><!--area teclado-->
+
+            <div class="categoria"><!--area dica assuto da palavra-->
+                <span id="dica" id="dica"></span>
+            </div><!--area dica assuto da palavra-->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="javascript/script.js"></script> 
+    </body>
+</html>
